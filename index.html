@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rain Team Simulator</title>
+    <title>Rain Team Sim</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Load Showdown Team Parser -->
-    <script src="https://unpkg.com"></script>
 </head>
 <body>
-    <div id="battle-screen">
-        <div id="opponent-side">
-            <div class="stat-box">
-                <p id="opp-name">Opponent</p>
-                <div class="hp-bar"><div id="opp-hp-fill"></div></div>
-            </div>
-            <img id="opp-sprite" src="" alt="Opponent Sprite">
-        </div>
-        
-        <div id="player-side">
-            <img id="player-sprite" src="" alt="Player Sprite">
-            <div class="stat-box">
-                <p id="player-name">Articuno</p>
-                <div class="hp-bar"><div id="player-hp-fill"></div></div>
-            </div>
+    <div id="battle-container">
+        <!-- Start Overlay -->
+        <div id="start-screen">
+            <button id="start-btn">START BATTLE</button>
         </div>
 
-        <div id="menu">
-            <div id="log">Battle started! Rain is falling.</div>
-            <div id="move-buttons"></div>
+        <div id="game-ui" class="hidden">
+            <div id="opp-side">
+                <div class="stats"><span>Garchomp</span> <div class="hp"><div id="opp-hp"></div></div></div>
+                <img id="opp-sprite" src="">
+            </div>
+            
+            <div id="player-side">
+                <img id="player-sprite" src="">
+                <div class="stats"><span id="p-name">Articuno</span> <div class="hp"><div id="p-hp"></div></div></div>
+            </div>
+
+            <div id="controls">
+                <div id="battle-log">Initializing...</div>
+                <div id="move-grid"></div>
+            </div>
         </div>
     </div>
     <script src="game.js"></script>

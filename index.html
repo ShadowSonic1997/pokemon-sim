@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rain Team Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Showdown Team Parser -->
+    <script src="https://unpkg.com"></script>
+</head>
+<body>
+    <div id="battle-screen">
+        <div id="opponent-side">
+            <div class="stat-box">
+                <p id="opp-name">Opponent</p>
+                <div class="hp-bar"><div id="opp-hp-fill"></div></div>
+            </div>
+            <img id="opp-sprite" src="" alt="Opponent Sprite">
+        </div>
+        
+        <div id="player-side">
+            <img id="player-sprite" src="" alt="Player Sprite">
+            <div class="stat-box">
+                <p id="player-name">Articuno</p>
+                <div class="hp-bar"><div id="player-hp-fill"></div></div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <div id="log">Battle started! Rain is falling.</div>
+            <div id="move-buttons"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
